@@ -1,0 +1,4 @@
+docker run -d --name some-zookeeper zookeeper
+docker run -d --name some-nimbus --link some-zookeeper:zookeeper storm storm nimbus
+docker run -d --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus storm storm supervisor
+docker run -d -p 8080:8080 --name ui --link some-nimbus:nimbus storm storm ui
