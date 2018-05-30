@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by e079608 on 5/4/2018.
+ * Created by Suki Yang on 5/4/2018.
  */
 @SpringBootApplication
 @EnableEurekaClient

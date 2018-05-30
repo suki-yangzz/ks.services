@@ -6,7 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Created by e079608 on 5/4/2018.
+ * Created by Suki Yang on 5/4/2018.
  */
 public interface CassandraClientController {
     @RequestMapping("/connect-cassandra")

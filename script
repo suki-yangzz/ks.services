@@ -2,3 +2,9 @@ docker run -d --name some-zookeeper zookeeper
 docker run -d --name some-nimbus --link some-zookeeper:zookeeper storm storm nimbus
 docker run -d --name supervisor --link some-zookeeper:zookeeper --link some-nimbus:nimbus storm storm supervisor
 docker run -d -p 8080:8080 --name ui --link some-nimbus:nimbus storm storm ui
+
+docker exec kafka /opt/kafka_2.12-1.1.0/bin/kafka-topics.sh --list --zookeeper zookeeper:2181
+
+docker run -it --rm --network=ksservices_default --link kafka sssyayayiooo/kafkadocker_kafka:latest /opt/kafka_2.12-1.1.0/bin/kafka-console-producer.sh --broker-list kafka:9092 --topic api-log
+
+docker exec -it redis redis-cli

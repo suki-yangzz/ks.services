@@ -6,7 +6,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 import java.util.UUID;
 
 /**
- * Created by e079608 on 5/3/2018.
+ * Created by Suki Yang on 5/3/2018.
  */
 @Table
 public class Customer {

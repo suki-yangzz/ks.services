@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 /**
- * Created by e079608 on 5/3/2018.
+ * Created by Suki Yang on 5/3/2018.
  */
 public interface CustomerRepository extends CrudRepository<Customer, String> {
 
